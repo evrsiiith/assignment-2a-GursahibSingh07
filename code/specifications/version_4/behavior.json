@@ -1,0 +1,117 @@
+{
+    "behaviors": [
+        {
+            "id": "DismissRiddle",
+            "event": "OnCondition",
+            "actors": ["RiddleBoard"],
+            "precondition": {
+                "all": [
+                    { "equals": ["Self.state", "showing"] },
+                    { "runAlgorithm": "IsOKClicked" }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "DismissRiddle"
+            },
+            "postcondition": {
+                "equals": ["Self.state", "hidden"]
+            }
+        },
+        {
+            "id": "ColorButtonPress",
+            "event": "OnCondition",
+            "actors": ["RedButton"],
+            "precondition": {
+                "all": [
+                    { "equals": ["Self.state", "idle"] },
+                    { "equals": ["RiddleBoard.state", "hidden"] },
+                    { "equals": ["TreasureChest.state", "locked"] },
+                    { "runAlgorithm": "IsButtonClicked", "params": { "obj": "Self" } }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "PressButton",
+                "params": { "obj": "Self" }
+            },
+            "postcondition": {
+                "equals": ["Self.state", "pressed"]
+            }
+        },
+        {
+            "id": "ButtonCooldown",
+            "event": "OnCondition",
+            "actors": ["RedButton"],
+            "precondition": {
+                "all": [
+                    { "equals": ["Self.state", "pressed"] },
+                    { "runAlgorithm": "IsCooldownDone", "params": { "obj": "Self" } }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "ResetButtonVisual",
+                "params": { "obj": "Self" }
+            },
+            "postcondition": {
+                "equals": ["Self.state", "idle"]
+            }
+        },
+        {
+            "id": "OpenChest",
+            "event": "OnCondition",
+            "actors": ["TreasureChest"],
+            "precondition": {
+                "all": [
+                    { "equals": ["Self.state", "locked"] },
+                    { "equals": ["RiddleBoard.state", "hidden"] },
+                    { "runAlgorithm": "IsSequenceCorrect" }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "OpenChest"
+            }
+        },
+        {
+            "id": "WrongSequence",
+            "event": "OnCondition",
+            "actors": ["TreasureChest"],
+            "precondition": {
+                "all": [
+                    { "equals": ["Self.state", "locked"] },
+                    { "equals": ["RiddleBoard.state", "hidden"] },
+                    { "runAlgorithm": "IsSequenceWrong" }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "HandleWrongSequence"
+            }
+        },
+        {
+            "id": "SkipRiddle",
+            "event": "OnCondition",
+            "actors": ["SkipRiddleButton"],
+            "precondition": {
+                "runAlgorithm": "IsSkipRiddleClicked"
+            },
+            "action": {
+                "runAlgorithm": "SkipRiddle"
+            }
+        },
+        {
+            "id": "ClickChest",
+            "event": "OnCondition",
+            "actors": ["TreasureChest"],
+            "precondition": {
+                "all": [
+                    { "equals": ["Self.state", "locked"] },
+                    { "runAlgorithm": "IsChestClicked" }
+                ]
+            },
+            "action": {
+                "runAlgorithm": "UnlockChest"
+            },
+            "postcondition": {
+                "equals": ["Self.state", "open"]
+            }
+        }
+    ]
+}

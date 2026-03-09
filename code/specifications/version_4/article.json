@@ -1,0 +1,450 @@
+{
+  "articles": [
+    {
+      "_objectname": "SkipRiddleButton",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "-7",
+        "y": "0.5",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "1",
+        "y": "1",
+        "z": "1"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "RiddleBoard",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "2",
+        "z": "5"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "4",
+        "y": "2.5",
+        "z": "0.1"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "showing",
+        "hidden"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "OKButton",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "1.5",
+        "z": "4.9"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "1.2",
+        "y": "0.5",
+        "z": "0.3"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "TreasureChest",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 1,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "4.75",
+        "y": "0.1",
+        "z": "-3"
+      },
+      "Transform_initialrotation": {
+        "x": "-90",
+        "y": "-90",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "1.5",
+        "y": "1",
+        "z": "1"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "locked",
+        "open"
+      ],
+      "context_img_source": "Assets/VReqDV/specifications/ImportedAssets/Chest_close.prefab"
+    },
+    {
+      "_objectname": "BlueButton",
+      "_sid": null,
+      "_slabel": null,
+      "source": "RedButton",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "3",
+        "y": "1.65",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.6",
+        "y": "0.3",
+        "z": "0.6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "GreenButton",
+      "_sid": null,
+      "_slabel": null,
+      "source": "RedButton",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "1.65",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.6",
+        "y": "0.3",
+        "z": "0.6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "RedButton",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "-3",
+        "y": "1.65",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.6",
+        "y": "0.3",
+        "z": "0.6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "idle",
+        "pressed"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "BluePillar",
+      "_sid": null,
+      "_slabel": null,
+      "source": "RedPillar",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "3",
+        "y": "0.75",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.6",
+        "y": "0.75",
+        "z": "0.6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "GreenPillar",
+      "_sid": null,
+      "_slabel": null,
+      "source": "RedPillar",
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "0.75",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.6",
+        "y": "0.75",
+        "z": "0.6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": null,
+      "context_img_source": null
+    },
+    {
+      "_objectname": "RedPillar",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "-3",
+        "y": "0.75",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.6",
+        "y": "0.75",
+        "z": "0.6"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Plane",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "20",
+        "y": "0.1",
+        "z": "15"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    }
+  ]
+}
